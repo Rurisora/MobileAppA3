@@ -1,9 +1,12 @@
 import React from "react";
 import {View, Text, TouchableOpacity, StyleSheet} from 'react-native';
+import { useRouter } from "expo-router";
 
 export default function NavBar() {
+    const router = useRouter();
     return(
-        <View style={styles.navbar}>
+       
+       <View style={styles.navbar}>
         
             <View style={styles.navLinks}>
                 <TouchableOpacity>
@@ -14,7 +17,7 @@ export default function NavBar() {
                     <Text style={styles.link}>Items</Text>
                 </TouchableOpacity>
 
-                <TouchableOpacity>
+                <TouchableOpacity onPress={() => router.push('/Soldier/soldierPage')}>
                     <Text style={styles.link}>Soldiers</Text>
                 </TouchableOpacity>
 

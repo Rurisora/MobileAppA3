@@ -1,17 +1,17 @@
 import { Text, View, StyleSheet } from "react-native";
-import NavBar from "./component/nav";
+import NavBar from "../component/nav";
 import { SafeAreaView } from "react-native-safe-area-context";
-import SoldierList from "./component/soldierlist";
+import SoldierList from "../component/soldierlist";
 
 
-export default function BannerNews() {
+export default function SoldierPage() {
   return (
     <SafeAreaView style={styles.body}>
       <View>
         <NavBar></NavBar>
       </View>
-      {/* <Text style={styles.titles}>Soldiers</Text>
-      <SoldierList></SoldierList> */}
+      <Text style={styles.titles}>Soldiers</Text>
+      <SoldierList></SoldierList>
     </SafeAreaView>
   );
 }
