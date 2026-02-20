@@ -32,7 +32,7 @@ export default function NavBar() {
             <View style={styles.navbar}>
             
                 <View style={styles.navLinks}>
-                    <TouchableOpacity>
+                    <TouchableOpacity onPress={() => router.push('/Heroes/heroesPage')}>
                         <Text style={styles.link}>Heroes</Text>
                     </TouchableOpacity>
 
