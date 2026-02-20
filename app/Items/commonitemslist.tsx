@@ -1,6 +1,6 @@
 import React from "react";
 import { View, FlatList, StyleSheet } from "react-native";
-import ItemCard from "../component/itemCard";
+import ItemCard from "./itemCard";
 
 const commonItems = [
   {
