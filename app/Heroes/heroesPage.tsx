@@ -65,7 +65,7 @@ const Heroes = [
     { id: '12', name: 'Almeda', avatar: require('./heroImg/Almeda.png') },
     { id: '13', name: 'Alpha', avatar: require('./heroImg/Alpha.png') },
     { id: '14', name: 'Altemuller', avatar: require('./heroImg/Altemuller.png') },
-    { id: '15', name: 'ALtina', avatar: require('./heroImg/Alfred.png') },
+    { id: '15', name: 'Altina', avatar: require('./heroImg/Altina.png') },
     { id: '16', name: 'Alustriel', avatar: require('./heroImg/Alustriel.png') },
     { id: '17', name: 'Amadeus', avatar: require('./heroImg/Amadeus.png') },
     { id: '18', name: 'Andriole', avatar: require('./heroImg/Andriole.png') },
@@ -106,7 +106,7 @@ const styles = StyleSheet.create({
   header: {
     alignItems: 'center',
     // paddingTop: 10,
-    marginTop: -20,
+    // marginTop: 10,
     paddingBottom: 10,
   },
   title: {
@@ -115,7 +115,7 @@ const styles = StyleSheet.create({
     // fontWeight: "bold",
     // textAlign: "center",
     lineHeight: 20,
-    paddingTop: 30,
+    paddingTop: 15,
     marginBottom: 0,
   },
   content: {
@@ -135,8 +135,8 @@ const styles = StyleSheet.create({
     fontSize: 9,
     textAlign: "center",
     width: 60,
-    marginTop: -5,
-    marginBottom: 10,
+    marginTop: 2,
+    marginBottom: 8,
   },
   heroCard: {
     alignItems: 'center',
