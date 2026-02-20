@@ -20,7 +20,7 @@ export default function NavBar() {
                     </TouchableOpacity>
                 </View>
                 
-                <Text></Text>
+                <Image source={require("../component/symbolimg/pc.png")}></Image>
                 
                 <TouchableOpacity onPress={() => router.push('/')}>
                     <Text style={styles.banner}><Image source={require("./symbolimg/headpanel.png")} style={{width: 14, height: 14 }}></Image>Banner News<Image source={require("./symbolimg/headpanel.png")} style={{width: 14, height: 14 }}></Image> </Text>
