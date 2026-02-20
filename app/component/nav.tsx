@@ -36,7 +36,7 @@ export default function NavBar() {
                         <Text style={styles.link}>Heroes</Text>
                     </TouchableOpacity>
 
-                    <TouchableOpacity>
+                    <TouchableOpacity onPress={() => router.push('/Items/commonitemPage')}>
                         <Text style={styles.link}>Items</Text>
                     </TouchableOpacity>
 
