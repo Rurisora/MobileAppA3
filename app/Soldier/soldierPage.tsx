@@ -1,4 +1,4 @@
-import { Text, View, StyleSheet } from "react-native";
+import { Text, View, Image,StyleSheet } from "react-native";
 import NavBar from "../component/nav";
 import { SafeAreaView } from "react-native-safe-area-context";
 import SoldierList from "../component/soldierlist";
@@ -10,7 +10,11 @@ export default function SoldierPage() {
       <View>
         <NavBar></NavBar>
       </View>
+      
+      <View style={styles.titlesContainer}>
       <Text style={styles.titles}>Soldiers</Text>
+      <Image source={require("../component/symbolimg/search.png")}></Image>
+      </View>
       <SoldierList></SoldierList>
     </SafeAreaView>
   );
@@ -23,10 +27,16 @@ const styles = StyleSheet.create({
     flex: 1,
   },
 
+  titlesContainer: {
+    flexDirection: "row",
+    justifyContent: "center",
+  },
+
   titles: {
     textAlign: "center",
     fontSize: 30,
     color: "#cdce8e",
     paddingVertical: 8,
+    marginHorizontal: 100,
   }
 })
